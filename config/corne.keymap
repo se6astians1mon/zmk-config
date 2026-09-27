@@ -20,9 +20,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp A  &kp Z  &kp E     &kp R  &kp T        &kp Y    &kp U  &kp I      &kp O          &kp P            &kp BSPC
-&kp LSHIFT  &kp Q  &kp S  &kp D     &kp F  &kp G        &kp H    &kp J  &kp K      &kp L          &kp M            &kp PERCENT
-&kp LCTRL   &kp W  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp SEMICOLON  &kp EXCLAMATION  &kp ESC
+&kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P            &kp BSPC
+&kp LSHIFT  &kp FR_Q  &kp FR_S  &kp FR_D     &kp FR_F  &kp FR_G        &kp FR_H    &kp FR_J  &kp FR_K      &kp FR_L          &kp FR_M            &kp FR_U_GRAVE 
+&kp LCTRL   &kp FR_W  &kp FR_X  &kp FR_C     &kp FR_V  &kp FR_B        &kp FR_N    &kp FR_M  &kp FR_COMMA  &kp FR_SEMICOLON  &kp FR_COLON  &kp ESC
                           &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2  &kp RALT
             >;
         };
@@ -35,7 +35,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6   &kp N7          &kp N8    &kp N9           &kp N0  &kp BSPC
+&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_SINGLE_QUOTE        &kp FR_LEFT_PARENTHESIS          &kp FR_N6   &kp FR_E_GRAVE          &kp FR_UNDERSCORE    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans          &kp UP    &trans           &trans  &trans
 &kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
                                         &kp LGUI      &trans        &kp SPACE       &kp RET  &trans          &kp RALT
@@ -50,9 +50,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL   &kp AT        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PRCNT    &kp CARET   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp AMPERSAND      &kp BSPC
-&kp LCTRL  &kp PLUS   &kp ASTERISK  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT      &kp HASH    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp BSLH           &kp GRAVE
-&kp LSHFT  &kp MINUS  &kp SLASH     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp DOLLAR  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOUBLE_QUOTES  &kp TILDE
+&kp TAB    &kp FR_EXCLAMATION   &kp FR_RIGHT_PARENTHESIS        &kp FR_LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp FR_AT_SIGN    &kp FR_UMLAUT   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp FR_SUPER2      &kp BSPC
+&kp LCTRL  &kp PLUS   &kp ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp SQT      &kp FR_HASH    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp FR_GREATER_THAN           &kp FR_GRAVE 
+&kp LSHFT  &kp MINUS  &kp SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERIX  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp FR_LESS_THAN   &kp FR_DOLLAR
                                     &kp LGUI              &trans                 &kp SPACE    &kp RET     &trans        &kp RALT
             >;
         };
