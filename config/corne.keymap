@@ -37,7 +37,7 @@
             bindings = <
 &kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_SINGLE_QUOTE        &kp FR_LEFT_PARENTHESIS          &kp FR_N6   &kp FR_E_GRAVE          &kp FR_UNDERSCORE    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &kp BSPC
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans          &kp UP    &trans           &trans  &trans
-&kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
+&kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &kp CAPS
                                         &kp LGUI      &trans        &kp SPACE       &kp RET  &trans          &kp RALT
             >;
         };
