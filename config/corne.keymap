@@ -14,15 +14,15 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  M  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  ,   |  ;  |  :  |  !  | ESC  |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ESC |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  M  |  BSP   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  ,   |  ;  |  :  |  !  | Shift  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P            &kp BSPC
-&kp LCTRL  &kp FR_Q  &kp FR_S  &kp FR_D     &kp FR_F  &kp FR_G        &kp FR_H    &kp FR_J  &kp FR_K      &kp FR_L          &kp FR_M            &kp FR_U_GRAVE 
-&kp LSHIFT	&kp FR_W  &kp FR_X  &kp FR_C     &kp FR_V  &kp FR_B        &kp FR_COMMA    &kp FR_N  &kp FR_SEMICOLON  &kp FR_COLON  &kp FR_EXCLAMATION  &kp ESC
+&kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P            &kp ESC
+&kp LCTRL  &kp FR_Q  &kp FR_S  &kp FR_D     &kp FR_F  &kp FR_G        &kp FR_H    &kp FR_J  &kp FR_K      &kp FR_L          &kp FR_M            &kp BSPC 
+&kp LSHIFT	&kp FR_W  &kp FR_X  &kp FR_C     &kp FR_V  &kp FR_B        &kp FR_COMMA    &kp FR_N  &kp FR_SEMICOLON  &kp FR_COLON  &kp FR_EXCLAMATION  &kp RSHIFT
                           &kp LGUI  &mo 1  &mo 2    &kp RET  &kp SPACE &kp RALT
             >;
         };
@@ -44,15 +44,15 @@
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  @  |  7  |  8  |  9  |  ²  | BSPC |
+            // | CTRL |     |     |     |     |     |   |  #  |  4  |  5  |  6  |  .  |  `   |
+            // | SHFT |     |     |     |     |     |   |  *  |  1  |  2  |  3  | , |  $   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &kp TAB    &kp FR_EXCLAMATION   &kp FR_QUESTION        &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_AT_SIGN    &kp FR_UMLAUT   &kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2      &kp BSPC
-&kp LCTRL  &kp FR_PLUS   &kp FR_ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      &kp FR_HASH    &kp FR_N4  &kp FR_N5        &kp FR_N6  &kp FR_GREATER_THAN           &kp FR_GRAVE
-&kp LSHFT  &kp FR_MINUS  &kp FR_SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERISK  &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_LESS_THAN   &kp FR_DOLLAR
+&kp LCTRL  &kp FR_PLUS   &kp FR_ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      &kp FR_HASH    &kp FR_N4  &kp FR_N5        &kp FR_N6  &kp FR_DOT	&kp FR_GRAVE
+&kp LSHFT  &kp FR_MINUS  &kp FR_SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERISK  &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA    &kp FR_DOLLAR
                                     &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp RALT
             >;
         };
