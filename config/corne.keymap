@@ -21,7 +21,7 @@
 
             bindings = <
 &kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P          &kp ESC
-&kp LCTRL  &kp FR_Q  &kp FR_S  &kp FR_D     &kp FR_F  &kp FR_G        &kp FR_H    &kp FR_J  &kp FR_K      &kp FR_L          &kp FR_M          &kp BSPC
+&kp LCTRL  &kp FR_Q  &kp FR_S  &kp FR_D     &kp FR_F  &kp FR_G        &kp FR_H    &kp FR_J  &kp FR_K      &kp FR_L          &kp FR_M  &kp BSPC
 &kp LSHIFT	&kp FR_W  &kp FR_X  &kp FR_C     &kp FR_V  &kp FR_B        &kp FR_COMMA    &kp FR_N  &kp FR_SEMICOLON  &kp FR_COLON  &kp FR_EXCLAMATION  &kp RSHIFT
                           &kp LGUI  &mo 1  &mo 2    &kp RET  &kp SPACE &kp RALT
             >;
@@ -30,12 +30,12 @@
         lower_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  &  |  é  |  "  |  '  |  (  |   |  -  |  è  |  _  |  ç  |  à  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  |  |  UP |  |     |      |
+            // | SHFT |     |     |     |     |     |   |   LEFT  |   DOWN  |  RIGHT   |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_SINGLE_QUOTE        &kp FR_LEFT_PARENTHESIS          &kp FR_MINUS   &kp FR_E_GRAVE          &kp FR_UNDERSCORE    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &kp BSPC
+&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_SINGLE_QUOTE        &kp FR_LEFT_PARENTHESIS          &kp FR_MINUS   &kp FR_E_GRAVE          &kp FR_UNDERSCORE    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans          &kp UP    &trans           &trans  &trans
 &kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &kp CAPS
                                         &kp LGUI      &trans        &trans        &kp RET  &kp SPACE          &kp RALT
