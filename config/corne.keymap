@@ -47,13 +47,13 @@
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  @  |  7  |  8  |  9  |  ²  | BSPC |
             // | CTRL |     |     |     |     |     |   |  #  |  4  |  5  |  6  |  .  |  `   |
             // | SHFT |     |     |     |     |     |   |  *  |  1  |  2  |  3  | , |  $   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                    | GUI |     | SPC |   | ENT |     | 0 |
 
             bindings = <
 &kp TAB    &kp FR_EXCLAMATION   &kp FR_QUESTION        &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_AT_SIGN    &kp FR_UMLAUT   &kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2      &kp BSPC
 &kp LCTRL  &kp FR_PLUS   &kp FR_ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      &kp FR_HASH    &kp FR_N4  &kp FR_N5        &kp FR_N6  &kp FR_DOT	&kp FR_GRAVE
 &kp LSHFT  &kp FR_MINUS  &kp FR_SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERISK  &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA    &kp FR_DOLLAR
-                                    &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp RALT
+                                    &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp FR_N0
             >;
         };
     };
