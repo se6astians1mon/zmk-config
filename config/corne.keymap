@@ -17,7 +17,7 @@
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  M  |  ESC  |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  ,   |  ;  |  :  |  !  | SHIFT  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            //                    | GUI | LWR | RWR |   | ENT | RSE  | ALT |
 
             bindings = <
 &kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P          &kp BSPC
@@ -35,8 +35,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_SINGLE_QUOTE        &kp FR_LEFT_PARENTHESIS          &kp FR_MINUS   &kp FR_E_GRAVE          &kp FR_UNDERSCORE    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &trans          &kp UP    &trans           &trans  &trans
+&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_DOLLAR        &kp FR_U_GRAVE           &kp FR_MINUS   &kp FR_E_GRAVE          &kp UP    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp LEFT_ARROW          &kp DOWN    &kp RIGHT_ARROW       &trans  &trans
 &kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &kp CAPS
                                         &kp LGUI      &trans        &trans        &kp RET  &kp SPACE          &kp RALT
             >;
@@ -53,7 +53,7 @@
 &kp TAB    &kp FR_EXCLAMATION   &kp FR_QUESTION        &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_AT_SIGN    &kp FR_UMLAUT   &kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2      &kp BSPC
 &kp LCTRL  &kp FR_PLUS   &kp FR_ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      &kp FR_HASH    &kp FR_N4  &kp FR_N5        &kp FR_N6  &kp FR_DOT	&kp FR_GRAVE
 &kp LSHFT  &kp FR_MINUS  &kp FR_SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERISK  &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA    &kp FR_DOLLAR
-                                    &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp FR_N0
+                                    &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp FR_N6
             >;
         };
     };
