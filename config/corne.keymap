@@ -14,10 +14,10 @@
 
         default_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSP |
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  BSP  |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  M  |  ESC  |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  ,   |  ;  |  :  |  !  | SHIFT  |
-            //                    | GUI | LWR | RWR |   | ENT | RSE  | ALT |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  ,   |  ;  |  :  |  !  | SHIFT |
+            //                    | GUI | LWR | RWR |   | ENT | SPACE| ALT |
 
             bindings = <
 &kp TAB     &kp FR_A  &kp FR_Z  &kp FR_E     &kp FR_R  &kp FR_T        &kp FR_Y    &kp FR_U  &kp FR_I      &kp FR_O          &kp FR_P          &kp BSPC
@@ -29,31 +29,31 @@
 
         lower_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  &  |  é  |  "  |  '  |  (  |   |  -  |  è  |  _  |  ç  |  à  | BSPC |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  |  |  UP |  |     |      |
-            // | SHFT |     |     |     |     |     |   |   LEFT  |   DOWN  |  RIGHT   |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // |  TAB |  &  |  -  |  _  |  =  |  $  |   | BT_CLR|   tg1 |  UP  |  tg2  |      |      |
+            // | CTRL |  é  |  è  |  à  |  ç  |  ù  | 	|    	| LEFT	| DOWN | RIGHT |      |      |
+            // | SHFT |  ¨  |  <  |     |     |     |   |  BT1  |  BT2  | BT3  |  BT4  |      | CAPS |
+            //                    | GUI |     |     |   | ENT   | SPACE |  ALT |
 
             bindings = <
-&kp TAB     &kp FR_AMPERSAND        &kp FR_E_ACUTE        &kp FR_DOUBLE_QUOTES        &kp FR_DOLLAR        &kp FR_U_GRAVE           &kp FR_MINUS   &kp FR_E_GRAVE          &kp UP    &kp FR_C_CEDILLA           &kp FR_A_GRAVE  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp LEFT_ARROW          &kp DOWN    &kp RIGHT_ARROW       &trans  &trans
-&kp LSHFT   &tog 1        &tog 2        &kp LCTRL     &trans        &trans          &trans   &kp LEFT_ARROW  &kp DOWN  &kp RIGHT_ARROW  &trans  &kp CAPS
-                                        &kp LGUI      &trans        &trans        &kp RET  &kp SPACE          &kp RALT
+&kp TAB   	&kp FR_AMPERSAND    &kp FR_MINUS    &kp FR_UNDERSCORE   &kp FR_EQUAL  		&kp FR_DOLLAR   &kp BT_CLR  	&tog 1    		&kp UP_ARROW    &tog 2	  		&trans  &trans
+&trans		&bt FR_E_ACUTE 		&bt FR_E_GRAVE  &bt FR_A_GRAVE   	&bt FR_C_CEDILLA   	&bt FR_U_GRAVE  &trans   		&kp LEFT_ARROW  &kp DOWN  		&kp RIGHT_ARROW &trans  &trans
+&kp LSHFT   &kp FR_UMLAUT       &kp FR_LESS_THAN   &trans     		&trans        		&trans          &bt BT_SEL 1  	&bt BT_SEL 2  	&bt BT_SEL 3 	&bt BT_SEL 4 	&trans  &kp CAPS
+												&kp LGUI            &trans            	&trans        	&trans      	&trans       	&trans
             >;
         };
 
         raise_layer {
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  @  |  7  |  8  |  9  |  ²  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  #  |  4  |  5  |  6  |  .  |  `   |
-            // | SHFT |     |     |     |     |     |   |  *  |  1  |  2  |  3  | , |  $   |
-            //                    | GUI |     | SPC |   | ENT |     | 0 |
+            // |  TAB |  !  |  @  |  (  |  )  |  %  |   |  <  |  7  |  8  |  9  |  ²  |      |
+            // | CTRL |  +  |  *  |  [  |  ]  |  '  |   |  #  |  4  |  5  |  6  |  .  |      |
+            // | SHFT |  -  |  /  |  {  |  }  |  "  |   |  *  |  1  |  2  |  3  |  ,  |      |
+            //                    | GUI |     |     |   |     |     | 0 | 
 
             bindings = <
-&kp TAB    &kp FR_EXCLAMATION   &kp FR_QUESTION        &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_AT_SIGN    &kp FR_UMLAUT   &kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2      &kp BSPC
-&kp LCTRL  &kp FR_PLUS   &kp FR_ASTERISK  &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      &kp FR_HASH    &kp FR_N4  &kp FR_N5        &kp FR_N6  &kp FR_DOT	&kp FR_GRAVE
-&kp LSHFT  &kp FR_MINUS  &kp FR_SLASH     &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES     &kp FR_ASTERISK  &kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA    &kp FR_DOLLAR
-                                    &kp LGUI              &trans                 &trans    &kp RET     &kp SPACE        &kp FR_N6
+&kp TAB    &kp FR_EXCLAMATION   &kp FR_AT_SIGN  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_PERCENT  			&kp FR_LESS_THAN 	&kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2 	&trans
+&kp LCTRL  &kp FR_PLUS   		&kp FR_ASTERISK &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      			&kp FR_HASH    	 	&kp FR_N4  &kp FR_N5  &kp FR_N6  &kp FR_DOT		&trans
+&kp LSHFT  &kp FR_MINUS  		&kp FR_SLASH    &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES 	&kp FR_ASTERISK  	&kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA   &trans
+													&kp LGUI    			&trans           			&trans    		&trans    		&trans       	&kp FR_N0
             >;
         };
     };
