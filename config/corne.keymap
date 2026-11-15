@@ -36,7 +36,7 @@
 
             bindings = <
 &kp TAB   	&kp FR_AMPERSAND    &kp FR_MINUS    &kp FR_UNDERSCORE   &kp FR_EQUAL  		&kp FR_DOLLAR   &kp BT_CLR  	&tog 1    		&kp UP_ARROW    &tog 2	  		&trans  &trans
-&trans		&bt FR_E_ACUTE 		&bt FR_E_GRAVE  &bt FR_A_GRAVE   	&bt FR_C_CEDILLA   	&bt FR_U_GRAVE  &trans   		&kp LEFT_ARROW  &kp DOWN  		&kp RIGHT_ARROW &trans  &trans
+&trans		&kp FR_E_ACUTE 		&kp FR_E_GRAVE  &kp FR_A_GRAVE   	&kp FR_C_CEDILLA   	&kp FR_U_GRAVE  &trans   		&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &trans  &trans
 &kp LSHFT   &kp FR_UMLAUT       &kp FR_LESS_THAN   &trans     		&trans        		&trans          &bt BT_SEL 1  	&bt BT_SEL 2  	&bt BT_SEL 3 	&bt BT_SEL 4 	&trans  &kp CAPS
 												&kp LGUI            &trans            	&trans        	&trans      	&trans       	&trans
             >;
@@ -53,7 +53,7 @@
 &kp TAB    &kp FR_EXCLAMATION   &kp FR_AT_SIGN  &kp FR_LEFT_PARENTHESIS  &kp FR_RIGHT_PARENTHESIS  &kp FR_PERCENT  			&kp FR_LESS_THAN 	&kp FR_N7  &kp FR_N8  &kp FR_N9  &kp FR_SUPER2 	&trans
 &kp LCTRL  &kp FR_PLUS   		&kp FR_ASTERISK &kp FR_LEFT_BRACKET      &kp FR_RIGHT_BRACKET      &kp FR_SQT      			&kp FR_HASH    	 	&kp FR_N4  &kp FR_N5  &kp FR_N6  &kp FR_DOT		&trans
 &kp LSHFT  &kp FR_MINUS  		&kp FR_SLASH    &kp FR_LEFT_BRACE        &kp FR_RIGHT_BRACE        &kp FR_DOUBLE_QUOTES 	&kp FR_ASTERISK  	&kp FR_N1  &kp FR_N2  &kp FR_N3  &kp FR_COMMA   &trans
-													&kp LGUI    			&trans           			&trans    		&trans    		&trans       	&kp FR_N0
+													&kp LGUI    			&trans           			&trans    		&trans    		&trans       		&kp FR_N0
             >;
         };
     };
