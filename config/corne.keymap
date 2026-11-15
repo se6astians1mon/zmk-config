@@ -35,7 +35,7 @@
             //                    | GUI |     |     |   | ENT   | SPACE |  ALT |
 
             bindings = <
-&kp TAB   	&kp FR_AMPERSAND    &kp FR_MINUS    &kp FR_UNDERSCORE   &kp FR_EQUAL  		&kp FR_DOLLAR   &kp BT_CLR  	&tog 1    		&kp UP_ARROW    &tog 2	  		&trans  &trans
+&kp TAB   	&kp FR_AMPERSAND    &kp FR_MINUS    &kp FR_UNDERSCORE   &kp FR_EQUAL  		&kp FR_DOLLAR   &bt BT_CLR  	&tog 1    		&kp UP_ARROW    &tog 2	  		&trans  &trans
 &trans		&kp FR_E_ACUTE 		&kp FR_E_GRAVE  &kp FR_A_GRAVE   	&kp FR_C_CEDILLA   	&kp FR_U_GRAVE  &trans   		&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW &trans  &trans
 &kp LSHFT   &kp FR_UMLAUT       &kp FR_LESS_THAN   &trans     		&trans        		&trans          &bt BT_SEL 1  	&bt BT_SEL 2  	&bt BT_SEL 3 	&bt BT_SEL 4 	&trans  &kp CAPS
 												&kp LGUI            &trans            	&trans        	&trans      	&trans       	&trans
